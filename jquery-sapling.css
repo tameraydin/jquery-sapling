@@ -1,0 +1,29 @@
+.sapling-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.sapling-list li {
+	display: block;
+	list-style: none;
+}
+.sapling-list ul {
+	display: none;
+}
+.sapling-list .sapling-item {
+	cursor: pointer;
+}
+.sapling-list .sapling-item:before {
+	content: "\25B6";
+	display: inline-block;
+	font-size: .8em;
+	padding-right: 5px;
+	width: 14px;
+}
+.sapling-list .sapling-item.sapling-expanded:before {
+	content: "\25BC";
+}
+.sapling-list .sapling-item.sapling-expanded > ul {
+	display: block;
+	cursor: default;
+}
