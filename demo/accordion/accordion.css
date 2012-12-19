@@ -9,6 +9,7 @@ ul, li {
 .sapling-list li {
 	display: block;
 	list-style: none;
+	position: relative;
 }
 .sapling-list ul {
 	display: none;
