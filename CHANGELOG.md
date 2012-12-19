@@ -1,6 +1,10 @@
 jQuery Sapling ChangeLog
 ===========================
 
+Version 0.3
+------------
+- CSS update for smoother slide animation.
+
 Version 0.2
 ------------
 - Animation option is added.
