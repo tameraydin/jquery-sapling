@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+
+	<title>jQuery Sapling</title>
+
+	<link rel="stylesheet" href="accordion.css">
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="../../jquery.sapling.min.js"></script>
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+
+			$('#demoList').sapling({ multiexpand: false, animation: true });
+
+		});
+
+	</script>
+
+</head>
+<body>
+
+	<h3>Using jQuery Sapling as accordion list:</h3>
+
+	<hr>
+
+	<ul id="demoList">
+		<li><span class="my-custom-title">Lorem ipsum dolor sit amet</span>
+			<ul>
+				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id nisl sed elit feugiat interdum quis sit amet massa. Vestibulum vulputate elementum diam, nec consequat urna volutpat sit amet. Vivamus sed enim ut mauris sodales eleifend.</li>
+			</ul>
+		</li>
+		<li><span class="my-custom-title">Morbi id nisl sed elit feugiat</span>
+			<ul>
+				<li>Pellentesque congue nisi eget dolor varius quis blandit tellus accumsan. Proin nec metus vel ante mattis facilisis sed non ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id nisl sed elit feugiat interdum quis sit amet massa. Vestibulum vulputate elementum diam, nec consequat urna volutpat sit amet. Vivamus sed enim ut mauris sodales eleifend. Mauris pretium leo sit amet justo vulputate at sollicitudin urna adipiscing</li>
+			</ul>
+		</li>
+		<li><span class="my-custom-title">Vestibulum vulputate elementum diam</span>
+			<ul>
+				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id nisl sed elit feugiat interdum quis sit amet massa. Vestibulum vulputate elementum diam, nec consequat urna volutpat sit amet. Vivamus sed enim ut mauris sodales eleifend.</li>
+			</ul>
+		</li>
+		<li><span class="my-custom-title">Vivamus sed enim ut mauris sodales</span>
+			<ul>
+				<li>Pellentesque congue nisi eget dolor varius quis blandit tellus accumsan. Proin nec metus vel ante mattis facilisis sed non ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id nisl sed elit feugiat interdum quis sit amet massa. Vestibulum vulputate elementum diam, nec consequat urna volutpat sit amet. Vivamus sed enim ut mauris sodales eleifend. Mauris pretium leo sit amet justo vulputate at sollicitudin urna adipiscing</li>
+			</ul>
+		</li>
+	</ul>
+
+</body>
+</html>
