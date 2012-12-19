@@ -1,0 +1,12 @@
+jQuery Sapling ChangeLog
+===========================
+
+Version 0.2
+------------
+- Animation option is added.
+- Unnecessary CSS rules are removed.
+- Anchor elements on a sapling-item are now clickable.
+
+Version 0.1
+------------
+- Initial release.

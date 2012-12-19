@@ -1,8 +1,6 @@
-.sapling-list {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
+/* 
+*	Base CSS for jQuery Sapling.
+*/
 .sapling-list li {
 	display: block;
 	list-style: none;
