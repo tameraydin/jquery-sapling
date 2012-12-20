@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+
+	<title>jQuery Sapling</title>
+
+	<link rel="stylesheet" href="tree.css">
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="../../jquery.sapling.min.js"></script>
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+
+			$('#demoList').sapling();
+
+		});
+
+	</script>
+
+</head>
+<body>
+
+	<h3>Using jQuery Sapling as tree:</h3>
+
+	<hr>
+
+	<ul id="demoList">
+		<li>Lorem ipsum dolor sit amet
+			<ul>
+				<li>Lorem ipsum dolor sit</li>
+				<li>Morbi id nisl sed elit feugiat</li>
+				<li>Vestibulum vulputate elementum diam</li>
+				<li><a href="">Pellentesque placerat justo</a>
+					<ul>
+						<li><a href="">Phasellus sit amet</a></li>
+						<li>Fusce at dolor elit</li>
+					</ul>
+				</li>
+				<li>Mauris pretium leo sit amet</li>
+			</ul>
+		</li>
+		<li><a href="">Morbi id nisl sed elit</a>
+			<ul>
+				<li>Pellentesque congue nisi</li>
+				<li>Proin nec metus vel ante
+					<ul>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Morbi id nisl sed elit feugiat</li>
+						<li>Vestibulum vulputate elementum diam
+							<ul>
+								<li>Lorem ipsum dolor sit</li>
+								<li>Morbi id nisl sed elit feugiat</li>
+								<li>Vestibulum vulputate elementum diam</li>
+							</ul>
+						</li>
+						<li>Vivamus sed enim ut mauris sodales</li>
+						<li>Mauris pretium leo sit amet justo</li>
+					</ul>
+				</li>
+				<li><a href="">Pellentesque placerat justo</a></li>
+				<li>In tincidunt laoreet dui</li>
+			</ul>
+		</li>
+		<li>Vestibulum vulputate</li>
+		<li>Vivamus sed enim ut mauris
+			<ul>
+				<li>Phasellus sit amet dolor</li>
+				<li>Fusce at dolor elit</li>
+			</ul>
+		</li>
+	</ul>
+
+</body>
+</html>

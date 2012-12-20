@@ -22,8 +22,8 @@ ul, li {
 	margin-bottom:5px;
 }
 .sapling-list .sapling-item.sapling-expanded > ul {
-	display: block;
 	cursor: default;
+	display: block;
 }
 .sapling-list .sapling-item .my-custom-title {
 	background: #f6f8f9;
@@ -33,8 +33,8 @@ ul, li {
 	background: -o-linear-gradient(top,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%);
 	background: -ms-linear-gradient(top,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%);
 	background: linear-gradient(to bottom,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=0 );
 	border-radius: 4px;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=0 );
 	display: block;
 	padding: 4px 8px;
 	text-shadow: 0 1px 0 #fff;
@@ -47,7 +47,7 @@ ul, li {
 	background: -o-linear-gradient(top, #e0f3fa 0%,#d8f0fc 50%,#b8e2f6 51%,#b6dffd 100%);
 	background: -ms-linear-gradient(top, #e0f3fa 0%,#d8f0fc 50%,#b8e2f6 51%,#b6dffd 100%);
 	background: linear-gradient(to bottom, #e0f3fa 0%,#d8f0fc 50%,#b8e2f6 51%,#b6dffd 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f3fa', endColorstr='#b6dffd',GradientType=0 );
 	border-radius: 4px 4px 0 0;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f3fa', endColorstr='#b6dffd',GradientType=0 );
 	text-shadow: 0 1px 0 #e0f3fa;
 }
