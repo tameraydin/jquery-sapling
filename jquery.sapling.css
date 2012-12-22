@@ -6,6 +6,7 @@
 	list-style: none;
 	position: relative;
 }
+.sapling-list ol,
 .sapling-list ul {
 	display: none;
 }
@@ -22,6 +23,7 @@
 .sapling-list .sapling-item.sapling-expanded:before {
 	content: "\25BC";
 }
+.sapling-list .sapling-item.sapling-expanded > ol,
 .sapling-list .sapling-item.sapling-expanded > ul {
 	display: block;
 	cursor: default;

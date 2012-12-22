@@ -1,8 +1,8 @@
 /*
-* jQuery Sapling - http://github.com/outofroutine/jquery-sapling/
-* An ultra-lightweight tree/accordion plugin for list elements.
+* jQuery Sapling - http://outofroutine.github.com/jquery-sapling/
+* An ultra-lightweight tree/accordion plugin for HTML lists.
 *
-* Version: 0.4
+* Version: 0.5
 * Dependency: jQuery v1.4.2+
 * Author: Tamer Aydın - http://www.tamerayd.in
 * 
@@ -53,12 +53,12 @@
 
 			if (plugin.settings.animation) {
 				expand = function(el) {
-					el.children('ul').slideDown(function() {
+					el.children('ul,ol').slideDown(function() {
 						el.addClass('sapling-expanded');
 					});
 				},
 				collapse = function(el) {
-					el.children('ul').slideUp(function() {
+					el.children('ul,ol').slideUp(function() {
 						el.removeClass('sapling-expanded');
 					});
 				};
@@ -67,10 +67,10 @@
 			$element.addClass('sapling-list');
 			$element.children('li').addClass('sapling-top-level');
 			$element.find('li').each(function() {
-				if ($(this).children('ul').index()!=-1) {
+				if ($(this).children('ul,ol').index()!=-1) {
 					$(this).addClass('sapling-item');
 					$(this).bind('click', click);
-					$(this).children('ul').bind('click', function(e) {
+					$(this).children('ul,ol').bind('click', function(e) {
 						if (e.target.nodeName != 'A') {
 							return false;
 						}

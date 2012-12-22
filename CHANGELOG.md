@@ -1,6 +1,10 @@
 jQuery Sapling ChangeLog
 ===========================
 
+Version 0.5
+------------
+- Added support for ordered lists (<ol>).
+
 Version 0.4
 ------------
 - Fix for anchor links in list elements.
