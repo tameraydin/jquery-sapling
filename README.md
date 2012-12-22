@@ -3,6 +3,4 @@ jQuery Sapling
 
 An ultra-lightweight tree/accordion plugin for list elements.
 
-Available options and their default values:
-- multiexpand : true
-- animation : false
+Please check the GitHub Page for more information - http://outofroutine.github.com/jquery-sapling/
