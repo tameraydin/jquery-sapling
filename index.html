@@ -38,20 +38,89 @@
 
 <h2>Usage</h2>
 
-<p>Requires <a href="http://blog.jquery.com/2010/02/19/jquery-142-released/" target="_blank">jQuery 1.4.2</a> or later.</p>
+<p>Add jQuery (Requires <a href="http://blog.jquery.com/2010/02/19/jquery-142-released/" target="_blank">jQuery 1.4.2</a> or later) and plugin assets into the <code>&lt;head&gt;</code> element:</p>
 
-<pre><code>$("#myUnorderedList").sapling();
+<pre><code>&lt;link href="jquery.sapling.css" rel="stylesheet"&gt;
+&lt;script src="jquery-1.4.2.min.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script src="jquery.sapling.min.js" type="text/javascript"&gt;&lt;/script&gt;
+</code></pre>
+
+<p>Place your lists (<code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>) in the HTML: (Please note that the Definition lists (<code>&lt;dl&gt;</code>) are not supported due to its different markup)</p>
+
+<pre><code>&lt;ul id="myList"&gt;
+    &lt;li&gt;This is first item&lt;/li&gt;
+    &lt;li&gt;This item has a sub list
+        &lt;ul&gt;
+            &lt;li&gt;First sub item&lt;/li&gt;
+            &lt;li&gt;Second sub item&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+<p>Simply select your list and call <code>sapling()</code> function when the DOM is ready:</p>
+
+<pre><code>$(document).ready(function() {
+    $("#myList").sapling();
+});
 </code></pre>
 
 <h2>Demo</h2>
 
-<h2>Options</h2>
+<ul>
+<li>
+<a href="http://tamerayd.in/works/jquery-sapling/simple-demo/" target="_blank">Simple demo</a> (With pure <em>jquery.sapling.css</em>)</li>
+<li><a href="http://tamerayd.in/works/jquery-sapling/tree-demo/" target="_blank">Tree list</a></li>
+<li><a href="http://tamerayd.in/works/jquery-sapling/accordion-demo/" target="_blank">Accordion list</a></li>
+</ul><h2>Options</h2>
+
+<table>
+<tr>
+<th>Property</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>multiexpand</td>
+<td>true</td>
+<td>Allow multiple items to expand. If <i>false</i>, only one item will be expanded at a time. (<i>true, false</i>)</td>
+</tr>
+<tr>
+<td>animation</td>
+<td>false</td>
+<td>Animation effect on expand/collapse. Suggested to be used for accordion-style lists.  (<i>true, false</i>)</td>
+</tr>
+</table><p>Sample usage: </p>
+
+<pre><code>$('#myList').sapling({
+    multiexpand: false,
+    animation: true
+});
+</code></pre>
 
 <h2>Methods</h2>
 
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>expand()</td>
+<td>Expands all items on a list.</td>
+</tr>
+<tr>
+<td>collapse()</td>
+<td>Collapses all items on a list.</td>
+</tr>
+</table><p>Sample usage: </p>
+
+<pre><code>$('#myList').data('sapling').expand();
+</code></pre>
+
 <h2>Browser Support</h2>
 
-<p>It tested and works on IE7+, FF 3.6+, Chrome 23, Safari 5.1, Opera 12. Please <a href="http://github.com/outofroutine/jquery-sapling/issues">report</a> if you have any issues with it.</p>
+<p>Tested successfully on IE7+, FF 3.6+, Chrome 23, Safari 5.1, Opera 12. Please <a href="http://github.com/outofroutine/jquery-sapling/issues">report</a> if you have any issues with it.</p>
       </section>
       <footer>
         <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
