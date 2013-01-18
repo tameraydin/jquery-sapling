@@ -25,6 +25,6 @@
 }
 .sapling-list .sapling-item.sapling-expanded > ol,
 .sapling-list .sapling-item.sapling-expanded > ul {
-	display: block;
 	cursor: default;
+	display: block;
 }
