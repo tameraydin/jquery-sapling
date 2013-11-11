@@ -2,7 +2,7 @@
 * jQuery Sapling - http://tameraydin.github.com/jquery-sapling/
 * An ultra-lightweight tree/accordion plugin for HTML lists.
 *
-* Version: 0.3.2
+* Version: 0.3.3
 * Dependency: jQuery v1.4.2+
 * Author: Tamer Aydın - http://www.tamerayd.in
 * 
