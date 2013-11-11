@@ -1,5 +1,5 @@
 /*
-* jQuery Sapling - http://outofroutine.github.com/jquery-sapling/
+* jQuery Sapling - http://tameraydin.github.com/jquery-sapling/
 * An ultra-lightweight tree/accordion plugin for HTML lists.
 *
 * Version: 0.3.0
