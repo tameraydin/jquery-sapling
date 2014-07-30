@@ -7,7 +7,7 @@
 		"tree",
 		"animation"
 	],
-	"version": "0.3.3",
+	"version": "0.3.4",
 	"author": {
 		"name": "Tamer Aydin",
 		"email": "tamer.aydin@gmail.com",
@@ -15,7 +15,8 @@
 	},
 	"licenses": [
 		{
-			"url": "http://creativecommons.org/licenses/by/3.0/"
+			"type": "MIT",
+			"url": "http://tameraydin.mit-license.org"
 		}
 	],
 	"dependencies" : {
