@@ -1,9 +1,13 @@
 jQuery Sapling ChangeLog
 ===========================
 
+Version 0.4.0
+------------
+- Fix for collapsing issue on anchor clicks.
+
 Version 0.3.0
 ------------
-- Added support for ordered lists (<ol>).
+- Added support for ordered lists (&lt;ol&lt;).
 
 Version 0.2.2
 ------------
