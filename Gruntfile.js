@@ -7,7 +7,13 @@ module.exports = function(grunt) {
 			dist: {
 				options: {
 					position: 'top',
-					banner: '<%= banner %>'
+					banner: '<%= banner %>',
+					linebreak: false,
+					process: function(filepath) {
+						var content = grunt.file.read(filepath);
+						return (content.indexOf(this.banner) > -1) ?
+							'' : this.banner + '\n';
+					}
 				},
 				files: {
 					src: ['jquery.sapling.css']
