@@ -16,32 +16,29 @@
 			};
 
 		var expand = function(el) {
-
 				el.addClass('sapling-expanded');
-
 			},
 			collapse = function(el) {
-
 				el.removeClass('sapling-expanded');
-
 			},
-			click = function() {
+			click = function(e) {
+				if (e.target.nodeName !== 'A') {
+					if ($(this).hasClass('sapling-expanded')) {
+						collapse($(this));
 
-				if ($(this).hasClass('sapling-expanded')) {
-					collapse($(this));
-				} else {
-					if (!plugin.settings.multiexpand) {
-						$element.find('.sapling-expanded').not($(this).parents()).trigger('click');
+					} else {
+						if (!plugin.settings.multiexpand) {
+							$element.find('.sapling-expanded').not($(this).parents()).trigger('click');
+						}
+
+						expand($(this));
 					}
-					expand($(this));
 				}
-
 			};
 
 		plugin.settings = {};
 
 		plugin.init = function() {
-
 			plugin.settings = $.extend({}, defaults, options);
 
 			if (plugin.settings.animation) {
@@ -50,6 +47,7 @@
 						el.addClass('sapling-expanded');
 					});
 				};
+
 				collapse = function(el) {
 					el.children('ul,ol').slideUp(function() {
 						el.removeClass('sapling-expanded');
@@ -70,23 +68,17 @@
 					});
 				}
 			});
-
 		};
 
 		plugin.expand = function() {
-
 			expand($element.find('.sapling-item'));
-
 		};
 
 		plugin.collapse = function() {
-
 			collapse($element.find('.sapling-expanded'));
-
 		};
 
 		plugin.init();
-
 	};
 
 	$.fn.sapling = function(options) {
