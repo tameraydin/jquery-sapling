@@ -8,13 +8,12 @@
 	$.sapling = function(element, options) {
 
 		var plugin = this,
-			element = element,
 			$element = $(element),
 
 			defaults = {
 				multiexpand: true,
 				animation: false
-			}
+			};
 
 		var expand = function(el) {
 
@@ -37,9 +36,9 @@
 					expand($(this));
 				}
 
-			}
+			};
 
-		plugin.settings = {}
+		plugin.settings = {};
 
 		plugin.init = function() {
 
@@ -50,7 +49,7 @@
 					el.children('ul,ol').slideDown(function() {
 						el.addClass('sapling-expanded');
 					});
-				},
+				};
 				collapse = function(el) {
 					el.children('ul,ol').slideUp(function() {
 						el.removeClass('sapling-expanded');
@@ -72,31 +71,31 @@
 				}
 			});
 
-		}
+		};
 
 		plugin.expand = function() {
 
 			expand($element.find('.sapling-item'));
 
-		}
+		};
 
 		plugin.collapse = function() {
 
 			collapse($element.find('.sapling-expanded'));
 
-		}
+		};
 
 		plugin.init();
 
-	}
+	};
 
 	$.fn.sapling = function(options) {
 		return this.each(function() {
-			if (undefined == $(this).data('sapling')) {
+			if ($(this).data('sapling') === undefined) {
 				var plugin = new $.sapling(this, options);
 				$(this).data('sapling', plugin);
 			}
 		});
-	}
+	};
 
 })(jQuery, window, document);
