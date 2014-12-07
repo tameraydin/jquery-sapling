@@ -7,7 +7,7 @@ Version 0.4.0
 
 Version 0.3.0
 ------------
-- Added support for ordered lists (&lt;ol&lt;).
+- Added support for ordered lists (&lt;ol&gt;).
 
 Version 0.2.2
 ------------
