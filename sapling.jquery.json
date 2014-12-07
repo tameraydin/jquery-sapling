@@ -2,6 +2,7 @@
 	"name": "sapling",
 	"title": "jQuery Sapling",
 	"description": "An ultra-lightweight tree/accordion plugin for HTML lists.",
+	"homepage": "http://tameraydin.github.io/jquery-sapling/",
 	"keywords": [
 		"accordion",
 		"tree",
@@ -13,14 +14,20 @@
 		"email": "tamer.aydin@gmail.com",
 		"url": "http://tamerayd.in"
 	},
-	"licenses": [
-		{
-			"type": "MIT",
-			"url": "http://tameraydin.mit-license.org"
-		}
-	],
-	"dependencies" : {
+	"licenses": [{
+		"type": "MIT",
+		"url": "http://tameraydin.mit-license.org"
+	}],
+	"dependencies": {
 		"jquery": ">=1.4.2"
 	},
-	"homepage": "http://tameraydin.github.com/jquery-sapling/"
+	"devDependencies": {
+		"grunt": "latest",
+		"grunt-contrib-jshint": "latest",
+		"grunt-contrib-uglify": "latest",
+		"grunt-contrib-jasmine": "latest",
+		"grunt-contrib-less": "latest",
+		"grunt-contrib-watch": "latest",
+		"grunt-banner": "latest"
+	}
 }
