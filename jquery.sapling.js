@@ -83,7 +83,8 @@
 
 	$.fn.sapling = function(options) {
 		return this.each(function() {
-			if ($(this).data('sapling') === undefined) {
+			var saplingData = $(this).data('sapling');
+			if (saplingData === undefined || saplingData === null) {
 				var plugin = new $.sapling(this, options);
 				$(this).data('sapling', plugin);
 			}
