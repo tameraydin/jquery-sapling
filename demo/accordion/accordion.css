@@ -1,0 +1,53 @@
+ul, li {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.sapling-list {
+	width: 400px;
+}
+.sapling-list li {
+	display: block;
+	list-style: none;
+	position: relative;
+}
+.sapling-list ul {
+	display: none;
+	padding: 6px 10px 10px;
+	border: 1px solid #b6dffd;
+	border-top: 0;
+}
+.sapling-list .sapling-item {
+	cursor: pointer;
+	margin-bottom:5px;
+}
+.sapling-list .sapling-item.sapling-expanded > ul {
+	cursor: default;
+	display: block;
+}
+.sapling-list .sapling-item .my-custom-title {
+	background: #f6f8f9;
+	background: -moz-linear-gradient(top,  #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f8f9), color-stop(50%,#e5ebee), color-stop(51%,#d7dee3), color-stop(100%,#f5f7f9));
+	background: -webkit-linear-gradient(top,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%);
+	background: -o-linear-gradient(top,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%);
+	background: -ms-linear-gradient(top,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%);
+	background: linear-gradient(to bottom,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%);
+	border-radius: 4px;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=0 );
+	display: block;
+	padding: 4px 8px;
+	text-shadow: 0 1px 0 #fff;
+}
+.sapling-list .sapling-item.sapling-expanded .my-custom-title {
+	background: #e0f3fa;
+	background: -moz-linear-gradient(top, #e0f3fa 0%, #d8f0fc 50%, #b8e2f6 51%, #b6dffd 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e0f3fa), color-stop(50%,#d8f0fc), color-stop(51%,#b8e2f6), color-stop(100%,#b6dffd));
+	background: -webkit-linear-gradient(top, #e0f3fa 0%,#d8f0fc 50%,#b8e2f6 51%,#b6dffd 100%);
+	background: -o-linear-gradient(top, #e0f3fa 0%,#d8f0fc 50%,#b8e2f6 51%,#b6dffd 100%);
+	background: -ms-linear-gradient(top, #e0f3fa 0%,#d8f0fc 50%,#b8e2f6 51%,#b6dffd 100%);
+	background: linear-gradient(to bottom, #e0f3fa 0%,#d8f0fc 50%,#b8e2f6 51%,#b6dffd 100%);
+	border-radius: 4px 4px 0 0;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f3fa', endColorstr='#b6dffd',GradientType=0 );
+	text-shadow: 0 1px 0 #e0f3fa;
+}

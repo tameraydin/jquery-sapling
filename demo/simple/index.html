@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+
+	<title>jQuery Sapling</title>
+
+	<link rel="stylesheet" href="../stylesheets/styles.css">
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="../javascripts/jquery.sapling.min.js"></script>
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+
+			$('#demoList').sapling();
+
+			$('#expandAll').click(function() {
+				$('#demoList').data('sapling').expand();
+			});
+
+			$('#collapseAll').click(function() {
+				$('#demoList').data('sapling').collapse();
+			});
+
+		});
+
+	</script>
+
+</head>
+<body>
+
+	<h3>Here what we got after initialize jQuery Sapling with its source files only:</h3>
+
+	<hr>
+
+	<a id="expandAll" href="#">Expand All</a> - <a id="collapseAll" href="#">Collapse All</a>
+
+	<ul id="demoList">
+		<li>Lorem ipsum dolor sit amet
+			<ul>
+				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+				<li>Morbi id nisl sed elit feugiat interdum quis sit amet massa.</li>
+				<li>Vestibulum vulputate elementum diam, nec consequat urna volutpat sit amet.</li>
+				<li><a href="">Pellentesque placerat justo ac risus dictum ac sollicitudin orci sodales.</a>
+					<ul>
+						<li><a href="">Phasellus sit amet dolor ac sapien mattis volutpat a at ante.</a></li>
+						<li>Fusce at dolor elit, quis accumsan velit.</li>
+					</ul>
+				</li>
+				<li>Mauris pretium leo sit amet justo vulputate at sollicitudin urna adipiscing</li>
+			</ul>
+		</li>
+		<li><a href="">Morbi id nisl sed elit feugiat</a>
+			<ul>
+				<li>Pellentesque congue nisi eget dolor varius quis blandit tellus accumsan.</li>
+				<li>Proin nec metus vel ante mattis facilisis sed non ipsum.
+					<ul>
+						<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+						<li>Morbi id nisl sed elit feugiat interdum quis sit amet massa.</li>
+						<li>Vestibulum vulputate elementum diam, nec consequat urna volutpat sit amet.</li>
+						<li>Vivamus sed enim ut mauris sodales eleifend.</li>
+						<li>Mauris pretium leo sit amet justo vulputate at sollicitudin urna adipiscing</li>
+					</ul>
+				</li>
+				<li><a href="">Pellentesque placerat justo ac risus dictum ac sollicitudin orci sodales.</a></li>
+				<li>In tincidunt laoreet dui, eu pharetra orci viverra et.</li>
+			</ul>
+		</li>
+		<li>Vestibulum vulputate elementum diam</li>
+		<li>Vivamus sed enim ut mauris sodales
+			<ul>
+				<li>Phasellus sit amet dolor ac sapien mattis volutpat a at ante.</li>
+				<li>Fusce at dolor elit, quis accumsan velit.</li>
+			</ul>
+		</li>
+	</ul>
+
+</body>
+</html>
