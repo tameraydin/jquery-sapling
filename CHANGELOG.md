@@ -1,6 +1,14 @@
 jQuery Sapling ChangeLog
 ===========================
 
+Version 0.6.0
+------------
+- Introduced "destroy" method.
+
+Version 0.5.0
+------------
+- Fix for the plugin initialization error.
+
 Version 0.4.0
 ------------
 - Fix for collapsing issue on anchor clicks.
