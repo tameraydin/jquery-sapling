@@ -3,7 +3,7 @@
   "title": "jQuery Sapling",
   "description": "An ultra-lightweight tree/accordion plugin for HTML lists.",
   "homepage": "http://tameraydin.github.io/jquery-sapling/",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "keywords": [
     "jquery-plugin",
     "accordion",

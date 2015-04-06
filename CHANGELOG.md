@@ -1,6 +1,10 @@
 jQuery Sapling ChangeLog
 ===========================
 
+Version 0.6.1
+------------
+- Fix for Bower package dependencies.
+
 Version 0.6.0
 ------------
 - Introduced "destroy" method.

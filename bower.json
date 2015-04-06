@@ -1,7 +1,7 @@
 {
   "name": "sapling",
   "description": "An ultra-lightweight tree/accordion plugin for HTML lists.",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "main": [
     "jquery.sapling.js",
     "jquery.sapling.css"
@@ -35,12 +35,5 @@
     "Gruntfile.js",
     "sapling.jquery.json",
     "package.json"
-  ],
-  "devDependencies": {
-    "grunt": "latest",
-    "grunt-contrib-jshint": "latest",
-    "grunt-contrib-uglify": "latest",
-    "grunt-contrib-watch": "latest",
-    "grunt-banner": "latest"
-  }
+  ]
 }
