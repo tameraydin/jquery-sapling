@@ -77,6 +77,11 @@
 			expand($element.find('.sapling-item'));
 		};
 
+		plugin.expandElement = function(element) {
+			expand($element.find(element));
+			expand($(element).parents());
+		};		
+		
 		plugin.collapse = function() {
 			collapse($element.find('.sapling-expanded'));
 		};
